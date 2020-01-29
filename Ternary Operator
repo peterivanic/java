@@ -13,9 +13,7 @@ public class TernaryOperator {
 
         System.out.println(randomNumber);
 
-        randomNumber = (randomNumber > 0) ? randomNumber * 2 : randomNumber * -2;
-
-        System.out.println(randomNumber);
+        System.out.println(randomNumber = (randomNumber > 0) ? randomNumber * 2 : randomNumber * -2);
 
     }
 }
