@@ -5,11 +5,11 @@ public class Accumulator {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        System.out.print("Write number:");
+        System.out.print("Write number : ");
         int number = sc.nextInt();
 
         int sum = 0;
-        for (int s = 0; s < number; s++) {   //all to the number
+        for (int s = 0; s < number; s++) {
             sum = sum + s;
         }
         System.out.println(sum);
