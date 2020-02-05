@@ -12,7 +12,7 @@ public class Arrays {
 
 
 
-        String[] words = {"one","two","three"};
+        String[] words = {"one","two","three,four"};
 
         System.out.println(words[0]);
 
