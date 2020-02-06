@@ -1,3 +1,5 @@
+package Kalkulacka;
+
 public class KalkulackaTester {
     public static void main(String[] args) {
         Kalkulacka kalkulacka = new Kalkulacka();

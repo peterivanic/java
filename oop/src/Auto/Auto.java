@@ -1,3 +1,5 @@
+package Auto;
+
 public class Auto {
     private String farba;
 

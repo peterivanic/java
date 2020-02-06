@@ -1,3 +1,5 @@
+package Auto;
+
 public class AutoTester {
     public static void main(String[] args) {
         Auto mercedes = new Auto();

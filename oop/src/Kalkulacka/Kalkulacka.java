@@ -1,3 +1,5 @@
+package Kalkulacka;
+
 public class Kalkulacka {
 
 
