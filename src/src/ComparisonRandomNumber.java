@@ -42,11 +42,9 @@ public class ComparisonRandomNumber {
 
         }
         for (int i = 1; i <= number; i++) {
-            if (i % 1 == 0) {
-
 
                 System.out.println(i);
-            }
+
         }
 
 

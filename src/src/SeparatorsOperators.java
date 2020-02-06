@@ -10,7 +10,7 @@ public class SeparatorsOperators {
 
         System.out.println("____________________________");
 
-        String separators = "[ ]   ( )   { }  ""  ,   ;   .   ";
+        String separators = "[ ]   ( )   { }  " ;
 
         System.out.println(separators);
     }
