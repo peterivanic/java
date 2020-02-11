@@ -2,16 +2,11 @@ import java.util.Scanner;
 
 public class Bill {
     public static void main(String[] args) {
-
-        System.out.println("Napis meno : ");
-        Scanner scanner = new Scanner(System.in);
-        String meno = scanner.nextLine();
-
-        System.out.println("Napis vlastnost : ");
-        Scanner scanner1 = new Scanner(System.in);
-        String vlastnost = scanner1.nextLine();
-
-        System.out.println(meno + " je " + vlastnost );
+        Scanner sc = new Scanner(System.in, "Windows-1250");
+        System.out.println("Ahoj, jak se jmenuješ?");
+        String jmeno = sc.nextLine();
+        System.out.println("Jaký jsi?");
+        String vlastnost = sc.nextLine();
+        System.out.println(jmeno + " je " + vlastnost);
     }
-
 }
