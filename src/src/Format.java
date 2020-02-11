@@ -5,8 +5,8 @@ public class Format {
 //                %s pro String
 //                %f pro float.
 
-        int a = 10;
-        int b = 20;
+        int a = 1;
+        int b = 2;
         int c = a + b;
 
         String s = String.format("Ked spocitame %d a %d, dostaneme : %d", a, b, c);
