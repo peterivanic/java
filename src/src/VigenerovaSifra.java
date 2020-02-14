@@ -3,42 +3,53 @@ import java.util.Scanner;
 public class VigenerovaSifra {
     public static void main(String[] args) {
 
-        Scanner sc1 = new Scanner(System.in, "Windows-1250");
+        Scanner sc = new Scanner(System.in, "Windows-1250");
         System.out.println("Zadejte text k zašifrování:");
-        String text = "moribundus";
+        String text = sc.nextLine().toLowerCase();
 
 
         System.out.println("Zadejte heslo:");
-        String heslo = sc1.nextLine().toLowerCase();
+        String heslo = sc.nextLine().toLowerCase();
 
         char[] h = heslo.toCharArray();
-        int [] hesloPole = new int[heslo.length()] ;
+
         char[] t = text.toCharArray();
-        int [] textPole = new int[text.length()];
+        int[] textPole = new int[text.length()];
         char[] sifra = new char[text.length()];
         String sifraFinal = "";
 
-
-
-        for (int i = 0; i < heslo.length();i++ ){
-            hesloPole [i] = (int) heslo.charAt(i)-96;
+        if (text.length() > heslo.length()) {
+            for (int p = 0; p < text.length() - 1; p++) {
+                heslo += heslo.charAt(p);
+            }
         }
-        for (int i = 0; i <text.length(); i++){
+        int[] hesloPole = new int[heslo.length()];
 
-            textPole[i] = (int) text.charAt(i)+hesloPole[i];
+        for (int i = 0; i < heslo.length(); i++) {
+            hesloPole[i] = (int) heslo.charAt(i) - 96;
         }
-       for (int i = 0; i< text.length() ;i++){
-           sifra[i] = (char) textPole[i];
-       }
-       for (int i : sifra){
-           System.out.println((char)i);
-       }
 
-       for (int i = 0;i < text.length();i++){
-           sifraFinal = sifraFinal + (char)sifra[i];
-       }
+        for (int i = 0; i < text.length(); i++) {
+            textPole[i] = (int) text.charAt(i) + hesloPole[i];
+        }
+
+        for (int i = 0; i < text.length(); i++) {
+
+            if (textPole[i] > (int) 'z') {
+                textPole[i] -= 26;
+                sifra[i] = (char) textPole[i];
+            } else {
+                sifra[i] = (char) textPole[i];
+            }
+
+        }
+
+        for (int i = 0; i < text.length(); i++) {
+            sifraFinal = sifraFinal + (char) sifra[i];
+        }
 
 
         System.out.println(sifraFinal);
+
     }
 }
