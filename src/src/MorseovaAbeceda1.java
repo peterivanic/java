@@ -5,7 +5,7 @@ public class MorseovaAbeceda1 {
 
 
 // řetězec, který chceme dekódovat
-            String s = ".- -... -.-. -.. ";
+            String s = "- . -. - --- .--. .-. --- --. .-. .- -- .--- ... . -- ...- -.-- - ...- --- .-. .. .-.. ... .- -- .--. --- -.. .. ...- . .--- - . -.-. --- -.. --- ...- . -.. .";
             System.out.printf("Původní zpráva: %s\n", s);
 // řetězec s dekódovanou zprávou
             StringBuilder zprava = new StringBuilder();
